@@ -1,0 +1,121 @@
+﻿<Window x:Class="Assignment2.Popup_Animal_Behavior"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Assignment2"
+        mc:Ignorable="d"
+        Title="Popup_Animal_Behavior" Height="300" Width="350">
+    <StackPanel>
+        <Label Name="Title" Content ="Animal Behavior" HorizontalContentAlignment="Center"/>
+        <StackPanel Orientation="Horizontal">
+            <Label Margin="5,5,0,5" Width="86" Content="Birds move"  />
+            <ComboBox Name="Bird_Steps" Height="22">
+                <ComboBoxItem Tag="0" >0 Steps</ComboBoxItem>
+                <ComboBoxItem Tag="1" IsSelected="True">1 Step</ComboBoxItem>
+                <ComboBoxItem Tag="2" >2 Steps</ComboBoxItem>
+                <ComboBoxItem Tag="3">3 Steps</ComboBoxItem>
+            </ComboBox>
+            <Label Margin="5,5,0,5" Width="98" Content="and dies from" HorizontalContentAlignment="Center"/>
+            <ComboBox Name="Bird_Eats" Height="22" Width="72">
+                <ComboBoxItem Content="nothing" Tag="nothing"></ComboBoxItem>
+                <ComboBoxItem Content="cricket" Tag="cricket.png"></ComboBoxItem>
+                <ComboBoxItem Content="frog" Tag="frog.png"></ComboBoxItem>
+                <ComboBoxItem Content="hunter" Tag="hunter.png" IsSelected="True"></ComboBoxItem>
+                <ComboBoxItem Content="mouse" Tag="mouse.png"></ComboBoxItem>
+                <ComboBoxItem Content="snake" Tag="snake.png"></ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Margin="5,5,0,5" Width="86" Content="Crickets move"  />
+            <ComboBox Name="Cricket_Steps" Height="22">
+                <ComboBoxItem Tag="0" >0 Steps</ComboBoxItem>
+                <ComboBoxItem Tag="1" IsSelected="True">1 Step</ComboBoxItem>
+                <ComboBoxItem Tag="2" >2 Steps</ComboBoxItem>
+                <ComboBoxItem Tag="3">3 Steps</ComboBoxItem>
+            </ComboBox>
+            <Label Margin="5,5,0,5" Width="98" Content="and dies from" HorizontalContentAlignment="Center"/>
+            <ComboBox Name="Cricket_Eats" Height="22">
+                <ComboBoxItem Content="nothing" Tag="nothing"></ComboBoxItem>
+                <ComboBoxItem Content="bird" Tag="bird.png" IsSelected="True"></ComboBoxItem>
+                <ComboBoxItem Content="frog" Tag="frog.png"></ComboBoxItem>
+                <ComboBoxItem Content="hunter" Tag="hunter.png"></ComboBoxItem>
+                <ComboBoxItem Content="mouse" Tag="mouse.png"></ComboBoxItem>
+                <ComboBoxItem Content="snake" Tag="snake.png"></ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Margin="5,5,0,5" Width="86" Content="Frogs move"  />
+            <ComboBox Name="Frog_Steps" Height="22">
+                <ComboBoxItem Tag="0" >0 Steps</ComboBoxItem>
+                <ComboBoxItem Tag="1" IsSelected="True">1 Step</ComboBoxItem>
+                <ComboBoxItem Tag="2" >2 Steps</ComboBoxItem>
+                <ComboBoxItem Tag="3">3 Steps</ComboBoxItem>
+            </ComboBox>
+            <Label Margin="5,5,0,5" Width="98" Content="and dies from" HorizontalContentAlignment="Center"/>
+            <ComboBox Name="Frog_Eats" Height="22" Width="72">
+                <ComboBoxItem Content="nothing" Tag="nothing"></ComboBoxItem>
+                <ComboBoxItem Content="bird" Tag="bird.png"></ComboBoxItem>
+                <ComboBoxItem Content="cricket" Tag="cricket.png"></ComboBoxItem>
+                <ComboBoxItem Content="hunter" Tag="hunter.png"></ComboBoxItem>
+                <ComboBoxItem Content="mouse" Tag="mouse.png"></ComboBoxItem>
+                <ComboBoxItem Content="snake" Tag="snake.png" IsSelected="True"></ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Margin="5,5,0,5" Width="85" Content="Hunters move"  />
+            <ComboBox Name="Hunter_Steps" Height="22" Width="63">
+                <ComboBoxItem Tag="0" IsSelected="True">0 Steps</ComboBoxItem>
+                <ComboBoxItem Tag="1" >1 Step</ComboBoxItem>
+                <ComboBoxItem Tag="2" >2 Steps</ComboBoxItem>
+                <ComboBoxItem Tag="3">3 Steps</ComboBoxItem>
+            </ComboBox>
+            <Label Margin="5,5,0,5" Width="98" Content="and dies from" HorizontalContentAlignment="Center"/>
+            <ComboBox Name="Hunter_Eats" Height="22" Width="72">
+                <ComboBoxItem Content="nothing" Tag="nothing" IsSelected="True"></ComboBoxItem>
+                <ComboBoxItem Content="bird" Tag="bird.png"></ComboBoxItem>
+                <ComboBoxItem Content="cricket" Tag="cricket.png"></ComboBoxItem>
+                <ComboBoxItem Content="frog" Tag="frog.png"></ComboBoxItem>
+                <ComboBoxItem Content="mouse" Tag="mouse.png"></ComboBoxItem>
+                <ComboBoxItem Content="snake" Tag="snake.png"></ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Margin="5,5,0,5" Width="86" Content="Mice move"  />
+            <ComboBox Name="Mouse_Steps" Height="22">
+                <ComboBoxItem Tag="0" >0 Steps</ComboBoxItem>
+                <ComboBoxItem Tag="1" IsSelected="True">1 Step</ComboBoxItem>
+                <ComboBoxItem Tag="2" >2 Steps</ComboBoxItem>
+                <ComboBoxItem Tag="3">3 Steps</ComboBoxItem>
+            </ComboBox>
+            <Label Margin="5,5,0,5" Width="98" Content="and dies from" HorizontalContentAlignment="Center"/>
+            <ComboBox Name="Mouse_Eats" Height="22" Width="72">
+                <ComboBoxItem Content="nothing" Tag="nothing"></ComboBoxItem>
+                <ComboBoxItem Content="bird" Tag="bird.png"></ComboBoxItem>
+                <ComboBoxItem Content="cricket" Tag="cricket.png"></ComboBoxItem>
+                <ComboBoxItem Content="frog" Tag="frog.png"></ComboBoxItem>
+                <ComboBoxItem Content="hunter" Tag="hunter.png"></ComboBoxItem>
+                <ComboBoxItem Content="snake" Tag="snake.png" IsSelected="True"></ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Margin="5,5,0,5" Width="86" Content="Snakes move"  />
+            <ComboBox Name="Snake_Steps" Height="22">
+                <ComboBoxItem Tag="0" >0 Steps</ComboBoxItem>
+                <ComboBoxItem Tag="1" IsSelected="True">1 Step</ComboBoxItem>
+                <ComboBoxItem Tag="2" >2 Steps</ComboBoxItem>
+                <ComboBoxItem Tag="3">3 Steps</ComboBoxItem>
+            </ComboBox>
+            <Label Margin="5,5,0,5" Width="98" Content="and dies from" HorizontalContentAlignment="Center"/>
+            <ComboBox Name="Snake_Eats" Height="22" Width="72">
+                <ComboBoxItem Content="nothing" Tag="nothing"></ComboBoxItem>
+                <ComboBoxItem Content="bird" Tag="bird.png"></ComboBoxItem>
+                <ComboBoxItem Content="cricket" Tag="cricket.png"></ComboBoxItem>
+                <ComboBoxItem Content="frog" Tag="frog.png"></ComboBoxItem>
+                <ComboBoxItem Content="hunter" IsSelected="True" Tag="hunter.png"></ComboBoxItem>
+                <ComboBoxItem Content="mouse" Tag="mouse.png"></ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+        <Button Name="Confirm" Content ="Confirm" HorizontalContentAlignment="Center" Width="80" Click="Confirm_Click"/>
+    </StackPanel>
+</Window>
